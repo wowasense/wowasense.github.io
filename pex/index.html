@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:lighter,400,600,700" rel="stylesheet">
+</head>
+<body class="wrap-body">
+  <!--
+  Блок, в блоке элемент. Если нужно позиционировать блоки, которые находятся
+  внутри другого блока, нужно именовать так:
+  block
+    block1 block__block1
+  Все остальные операции (цвет, форма и тд) оформляется в block1
+  Тогда вложенные блоки могут применяться повторно для стилизации
+
+  Для стилизации нескольких блоков одновременно использовать миксы:
+  block1 text
+  block2 text
+ -->
+  <div class="wrap-header">
+    <header class="header">
+      <div class="logo header__logo">
+        <img class="logo__img" src="images/pex.png" alt="pex logo">
+        <img class="logo__text" src="images/logo_text.png" alt="logo text">
+      </div>
+      <nav class="navigation">
+        <ul class="menu header__menu">
+          <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">How It Works</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+        </ul>
+      </nav>
+      <form action="#" class="search-form header__search-form">
+        <input type="text" placeholder="Search Website" class="search-form__input">
+        <button class="search-form__btn" type="submit"></button>
+      </form>
+    </header>
+    <div class="title-block wrap-header__title-block">
+      <h1 class="title-block__title">
+        Designs your eyeballs will thank you for
+      </h1>
+      <a class="title-block__btn" href="#">Get Started Today</a>
+      <div class="title-block__text-under-btn">
+        Lorem ipsum dolor sit amet, consectetur
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <section class="features-page">
+      <h2 class="section-title">features</h2>
+      <div class="feature-block features-page__feature-block">
+        <div class="feature-block__title">A fantastic heading</div>
+        <div class="feature-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
+      </div>
+      <div class="feature-block features-page__feature-block">
+        <div class="feature-block__title">Good day blokes</div>
+        <div class="feature-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
+      </div>
+      <div class="feature-block features-page__feature-block">
+        <div class="feature-block__title">Blaz Robar for president</div>
+        <div class="feature-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
+      </div>
+      <div class="feature-block features-page__feature-block">
+        <div class="feature-block__title">Vote for robar</div>
+        <div class="feature-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</div>
+      </div>
+    </section>
+    <section class="contrast-page">
+      <h2 class="section-title">contrast</h2>
+      <div class="contrast-block contrast-page__contrast-block">
+        <h2 class="contrast-block__title">Wicked & whack, bang bang boo!</h2>
+        <div class="contrast-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</div>
+        <div class="contrast-block__btn">Get Started Today</div>
+      </div>
+    </section>
+    <section class="description1-page">
+      <h2 class="section-title">description1</h2>
+      <div class="description1-page__img-block"><img class="description1-page__img" src="../images/desc1.jpg" alt="desc1"></div>
+      <div class="description1-block description1-page__block">
+        <h2 class="description1-block__title">A heading is what you need here</h2>
+        <div class="description1-block__text description1-block__text_l">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        <div class="description1-block__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </div>
+      </div>
+    </section>
+    <section class="wrap-experience">
+      <h2 class="section-title">expreience</h2>
+      <div class="experience-page">
+        <div class="experience-block experience-page__experience-block">
+          <h2 class="experience-block__title">Experience the rush today</h2>
+          <div class="experience-block__text_l2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua consectetur adipisicing elit.</div>
+          <a class="experience-block__btn">Get Started Today</a>
+          <div class="experience-block__text-under-btn">Lorem ipsum dolor sit amet, consectetur</div>
+        </div>
+      </div>
+    </section>
+    <section class="photography-page">
+      <h2 class="section-title">photography</h2>
+      <div class="photography-block photography-page__photography-block">
+        <div class="photography-block__category">Photography</div>
+        <h2 class="photography-block__title">Lorem ipsum dolor sit amet consectetur adipisicing elit</h2>
+        <div class="author-block photography-block__author-block">
+          <img src="../images/avatar.png" alt="Blaz Robar" class="author-block__avatar">
+          <div class="author-block__bio">Blaz Robar, god like web designer</div>
+        </div>
+      </div>
+    </section>
+    <section class="description2-page">
+      <h2 class="section-title">description2</h2>
+      <div class="description2-page__img-block"><img class="description2-page__img" src="../images/hand.jpg" alt="hand"></div>
+      <div class="description2-block description2-page__block">
+        <h2 class="description2-block__title">A heading is what you need here</h2>
+        <div class="description2-block__text description2-block__text_l">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        <div class="description2-block__text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </div>
+      </div>
+    </section>
+    <section class="contact-page">
+      <h2 class="section-title">contact us</h2>
+      <div class="contact-block contact-page__contact-block">
+        <h2 class="contact-block__title">Get in touch</h2>
+        <div class="contact-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="contact-block__email">help@yomuma.com</div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__text">psum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  </footer>
+</body>
+</html>
